@@ -7,6 +7,7 @@
 :root {
     --white: #FFFFFF;
     --gray: #FFFFFF69;
+    --green: #4BCB36;
 }
 
 body {
@@ -185,4 +186,42 @@ header nav ul li a {
     .line {
         display: none;
     }
+}
+
+.movieContainer {
+    margin-top: 63px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+}
+
+.movieContainer .movie {
+    max-width: 339px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    gap: 10px;
+}
+
+.movieContainer .movie .raiting {
+    width: 62px;
+    height: 33px;
+    background-color: var(--green);
+    position: absolute;
+    top: 20px;
+    left: 260px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.movieContainer .movie .poster {
+    width: 339px;
+    border-radius: 10px;
 }
